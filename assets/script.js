@@ -20,7 +20,23 @@ function getSavedItems() {
         }
     });
 }
+function hourBlockFormatting () {
+    var hour = moment().hours();
+    $(".time-block").each(function(){
+        var curHour = parseInt($(this).attr("id"));
 
+    if (curHour > hour) {
+        $(this).addClass("future");
+    } else if (curHour === hour) {
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("past");
+    }
+    })
+
+}
+
+hourBlockFormatting();
 
 getSavedItems();
 
