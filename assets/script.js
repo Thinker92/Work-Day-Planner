@@ -3,13 +3,14 @@ $("#currentDay").text(moment().format('MMMM Do YYYY'));
 
 //Declaring save buttons
 const saveButton = $(".saveBtn")
+// On click, save text area contents of items to localStorage
 saveButton.on("click", function(event){
     event.preventDefault();
     var hour = $(this).siblings(".hour").text();
     var items = $(this).siblings(".items").val();
     localStorage.setItem(hour,items);
 });
-
+// function for loading localstorage 
 function getSavedItems() {
     $(".hour").each(function(){
         var currHour = $(this).text();
@@ -20,4 +21,6 @@ function getSavedItems() {
     });
 }
 
+
 getSavedItems();
+
