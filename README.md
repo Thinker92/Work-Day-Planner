@@ -1,4 +1,4 @@
-# Work-Day-
+# Work-Day-Planner
 
   ## Licensing:
   [![license](https://img.shields.io/badge/license-undefined-blue)](https://shields.io)
