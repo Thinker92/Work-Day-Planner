@@ -15,7 +15,7 @@
   A workday planner to track items to do, broken down by time slots
 
   ## Usage:
-  Clone the repository and open up index.html to start adding things to your schedule!
+  Clone the repository and open up index.html, or open live link to site (https://thinker92.github.io/Work-Day-Planner/) to start adding things to your schedule!
 
   ## License:
   None
